@@ -1,42 +1,60 @@
-﻿# FocusFlow ⏱✔
+# FocusFlow
 
-A responsive Pomodoro productivity app built with **HTML, CSS & JavaScript** — no frameworks, no dependencies.
+A responsive Pomodoro productivity app built with HTML, CSS, and Vanilla JavaScript with no frameworks or external dependencies.
 
 ![FocusFlow Preview](https://img.shields.io/badge/status-live-brightgreen) ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-
----
 
 ## Features
 
 ### ⏱ Pomodoro Timer
-- Customizable durations — Focus, Short Break, Long Break (no 25-min limit!)
-- Circular SVG progress ring — **green** during Focus, **red** during Break
-- Auto-switches between Focus → Short Break → Long Break (every 4 sessions)
-- Start / Pause / Reset / Skip controls
-- Real **bell chime sound** using Web Audio API (inharmonic partials for authentic resonance)
-- Browser notifications when session ends
+- **Customizable Durations:** Configure Focus, Short Break, and Long Break durations with no 25-minute restriction.
+- **Visual Progress Ring:** SVG circular progress indicator displaying green during Focus sessions and blue during Breaks.
+- **Automated Workflow:** Automatically switches from Focus → Short Break → Long Break every 4 sessions.
+- **Full Controls:** Start, pause, reset, and skip options.
+- **Audio Alerts:** Authentic bell chime synthesized using the Web Audio API with inharmonic partials for natural resonance.
+- **Browser Notifications:** Receive desktop notifications upon session completion.
 
 ### ✅ Task Manager
-- Add, delete, and complete tasks
-- Click a task to set it as **active** — shown in "Currently Working On"
-- Pomodoro count tracked **per task**
-- Tasks persist via `localStorage`
+- Add, complete, and delete tasks.
+- Select a active task to display under "Currently Working On".
+- Track pomodoros completed per task.
+- Persistent state using `localStorage`.
 
 ### 🌙 Dark / Light Mode
-- Toggle button in header
-- Respects system `prefers-color-scheme`
-- Preference saved to `localStorage`
+- Header toggle button to manually switch themes.
+- Respects system preference via `prefers-color-scheme`.
+- Theme selection saved in `localStorage`.
 
 ### 📊 Daily Stats
-- Total pomodoros completed today
-- Total focus minutes
-- Auto-resets at midnight
+- Track total pomodoros completed today.
+- Track total focus minutes.
+- Automatically resets statistics at midnight.
 
----
+## Technologies Used
+
+- **HTML5:** Semantic layout and ARIA accessibility features.
+- **CSS3:** Custom properties (variables), CSS Grid, Flexbox, SVG animations, and light/dark theme styling.
+- **Vanilla JavaScript:** Web Audio API, DOM manipulation, `setInterval`, and `localStorage`.
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/imaakarsh/FocusFlow.git
+   ```
+2. Open `index.html` in any modern web browser (no build step required).
+
+## Usage
+
+1. **Configure Timer:** Click the ⚙ gear icon to customize Focus and Break session durations.
+2. **Add Tasks:** Type a task description in the right panel and press Enter or click **Add**.
+3. **Select Active Task:** Click a task to set it as active.
+4. **Run Timer:** Click **Start**. An audio chime will sound when the session ends.
+5. **Track Progress:** View pomodoros completed per task and overall metrics in the footer.
 
 ## Color Theme
 
-| | Dark Mode | Light Mode |
+| Element | Dark Mode | Light Mode |
 |---|---|---|
 | Background | `#0D0D0F` | `#FFF8F2` |
 | Card | `#161618` | `#FFFFFF` |
@@ -44,45 +62,15 @@ A responsive Pomodoro productivity app built with **HTML, CSS & JavaScript** —
 | Focus Ring | `#22C55E` (Green) | `#16A34A` |
 | Break Ring | `#3B82F6` (Blue) | `#3B82F6` |
 
----
+## Project Structure
 
-## File Structure
-
-```
+```text
 FocusFlow/
 ├── index.html    # App structure & layout
 ├── style.css     # All styling, themes, animations
 └── script.js     # Timer logic, tasks, audio, localStorage
 ```
 
----
+## Credits
 
-## Getting Started
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/imaakarsh/FocusFlow.git
-   ```
-2. Open `index.html` in any browser — no build step needed.
-
----
-
-## How to Use
-
-1. **Set durations** — click the ⚙ gear icon to customize Focus / Break times
-2. **Add tasks** — type in the right panel and press Enter or click Add
-3. **Select a task** — click it to set as active
-4. **Start the timer** — click Start; the chime rings when done
-5. **Track progress** — completed pomodoros shown per task and in the footer
-
----
-
-## Tech Used
-
-- **HTML5** — semantic structure, ARIA accessibility
-- **CSS3** — CSS variables, Grid, Flexbox, SVG animations, dark/light themes
-- **Vanilla JS** — Web Audio API, localStorage, setInterval, DOM manipulation
-
----
-
-*Made with ❤️ by **Aakarsh Dev** · FocusFlow*
+Created by **Aakarsh Dev**.
